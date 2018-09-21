@@ -1,0 +1,55 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+hr {
+  margin: 0 0 0.5rem 0;
+}
+
+/* https://github.com/jgthms/bulma/issues/1604#issuecomment-422407761 */
+nav .navbar-brand {
+  flex-grow: 1;
+  justify-content: center;
+}
+
+main.page-content {
+  position: relative;
+  flex: 1;
+}
+
+main .container {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  border: 1px solid silver;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+footer.footer {
+  background: #363636;
+  color: #fff;
+  padding: 1rem;
+}
+
+footer.footer a:hover {
+  color: #fff;
+}
+
+#particles-js {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.p-l {
+  padding-left: 0.3rem;
+}

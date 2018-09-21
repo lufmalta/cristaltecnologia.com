@@ -1,0 +1,18 @@
+language: ruby
+cache: bundler
+rvm:
+  - 2.4.0
+script:
+  - bundle exec jekyll build
+  - bundle exec htmlproofer ./_site --disable-external
+deploy:
+  provider: s3
+  bucket: cristaltecnologia.com
+  local_dir: ./_site
+  skip_cleanup: true
+  access_key_id: AKIAJNC2WHEG5U56F5GA
+  secret_access_key:
+    secure: "KbD527o8bskcscqBu5h+DzGW8e8EuXgl10/vzKT0uWzoTYOzPHtgAP0gdZ7kGmTVFTdI2kWiXSpv/xrP3bMhcq8iVt+iw8xjZ/DtM3E8n7jtmO27r7tC+zqxWI7xZOthk5hs0VYWJq3ABj5hsK5Ow7y8Mf03cV2iR5Rdpvmom6PfY1ckAn+ixa7bkN07Mp4AfAbQ8rcnisudgdKKJpvYvjsHhim5ASkyoKWN5VascDLuJMxvV9sH997MGqdBF4Lav6HOLoTHKmIri002X86ab7p2ztu4Vb4uWgU0sx7HXNabjUYwRhf9rIfzkaIRQRk1eIy3VHI4HBQrT3TQ8oGgqT8GQgSguB5PHU3L9qcTXG3KUKY3NsQhRoki5vyRgnf+peJWu+WZ4j27nn7aBvK5QQKpzerLR7yhDRGnWMy9LADzXBKGywq3Vtw2xgc3TqlLd+IBZ7bUu4LrNUGCb7c4eehRV1Wq7/+rc86Is713gnxZXjLWxcJedhzVEckKWKdNJIbd/RAkWL0HXI8hvegYsBlmXSsEC13CNkcGofwj+6AC8jOWFdMONYQCJ+o8AOeUw2v9hzIjVBPs/GUpCb3wlBqw7sHbmsx3U0AX8Vt5w9rXY4MXRNJ7LDrANZYu8ihWyhZFUkV+qpkhwxQawJlxDG05b7qClcUiIlSkbhwiSdA="
+branches:
+  only:
+  - master

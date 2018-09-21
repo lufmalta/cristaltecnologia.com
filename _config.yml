@@ -1,0 +1,10 @@
+title: Cristal Tecnologia
+email: contato@cristaltecnologia.com
+description: Soluções transparentes e sólidas para empresas e pessoas.
+lang: "pt-BR"
+baseurl: ""
+url: ""
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
