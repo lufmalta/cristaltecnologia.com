@@ -1,7 +1,7 @@
 language: ruby
 cache: bundler
 rvm:
-  - 2.4.0
+  - 2.5.1
 script:
   - bundle exec jekyll build
   - bundle exec htmlproofer ./_site --disable-external
@@ -16,4 +16,4 @@ deploy:
     secure: "nESdPpcX7JlzCNSm28+/1LykqqvSZy+DAFEIvNbhc+uWxVErT9O5+KL2YFLvHEstvwhDi8IYzVGpQh3mIPCtEteuO48aFcRWVYcxrYHuOrFyq7uew76tXle4d1B/dPtHs3EHI42mu0J7aXWArgLMSuPyWY+4d0Lpl0QXCojCJVxSPGRX2jfR+xeSyQm79Qi2G8hCcR16GpnL/nCTMMaq1i+ZngbOcCDNYGwbV3UjXHICwG1YeddriOH0cWOtdiLVklTc4zYYXhZ5ToYCisALtFolX6UMPROmP7GPAg/1ueMLcc9TkdWX/ZbOEN/5R2S7zcJXJw4n4bn4hACoCsqPSU5I5aQLyJdg5hFk3i6prZAM/qEaM6ein40ZIg3Jd7v2BCtjwLelnuToHBkEojgRKBaj8NBySzkGxE7OeRFh2p/UBjBbuIljY8KWqaQU0IOIszH+RbwSroB9AQlL6DOiJpN3Dih3gok7Opw1OCotMNxLYRZFGAmxQsblvBnvOTS2/eTvO2sOWER366XkgABEoUlIDOIee8ry4WlT5G7hNV7mi+4zTys/uDk2gIm59Hb+Higewdjx57kLzg7stURbmZKNOilU4zKHhr990elPU4ciLWWrw+ivID+MQb9BVrgTupuIulIzxoPfHBXUgAmnYzd8bZ71S+1P4R+F1kPnWi8="
 branches:
   only:
-  - master
+    - master
